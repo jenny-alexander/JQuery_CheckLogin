@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <script src="/vendors/jquery-3.6.0.min.js"></script>
     <script src="/scripts/client.js"></script>
     <title>Check email using JQuery!</title>
 </head>
 <body>
-    <h1>Check email using JQuery</h1>
+    <h1>Validate email & password using JQuery!</h1>
+    <form>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" id="email"><br><br>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br><br>
+        </p> 
+        <p>
+        <button id="validateInput" type="button">Check email & password!</button><br><br>
+        </p>
+        <p id="checkResult"></p>
+    </form>
 </body>
 </html>
