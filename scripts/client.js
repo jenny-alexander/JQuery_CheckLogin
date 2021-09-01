@@ -26,7 +26,7 @@ function checkInput() {
        outputResult( `Enter both email and password before hitting button.` );
     } else {
         if ( validateEmail( email ) === true && validatePwd( pwd ) === true ) {
-            outputResult(`Cool, you did it!`);
+            outputResult(`Validation passed!`);
         } else {
             outputResult(`Incorrect format for username and/or password.`);
         }
@@ -39,11 +39,11 @@ function outputResult( result ) {
     let elCheckResult = $( '#checkResult' );
     elCheckResult.empty();
     elCheckResult.append( result );
-
 }
 
 /** validateEmail checks for `@` and `.` in email address */  
 function validateEmail( email ) {
+
     console.log(`in validateEmail:`);
     if ( email.includes(`@`) && email.includes(`.`) ) {
         return true;
@@ -58,6 +58,7 @@ function validateEmail( email ) {
  * 3- check that password has at least 1 uppercase character
  */
 function validatePwd( password ) {
+
     console.log("in validatePwd")
 
     //Create regular expressions to validate against

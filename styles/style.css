@@ -1,12 +1,7 @@
 body {
     background-color: beige;
-    color: rgb(108, 99, 236);
+    color: rgb(82, 163, 57);
     font-family: 'Courier New', Courier, monospace;
-}
-
-h1 {
-    border-style: dashed;
-    border-color: coral;
 }
 
 form {
@@ -24,3 +19,29 @@ label {
 input {
     display: table-cell;
 }
+
+#validateInput {
+    background-color: #4CAF50; /* Green */
+    border: 2px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 3px #999;
+  }
+  #validateInput:hover {background-color: #3e8e41}
+
+  #validateInput:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #checkResult {
+      font-style:italic;
+      color: red;
+  }
+
