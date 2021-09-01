@@ -9,19 +9,22 @@
     <script src="/scripts/client.js"></script>
     <title>Check email using JQuery!</title>
 </head>
+
 <body>
     <h1>Validate email & password using JQuery!</h1>
-    <form>
-        <p>
-            <label for="email">Email:</label>
-            <input type="email" id="email"><br><br>
-        </p>
-        <p>
-            <label for="password">Password:</label>
-            <input type="password" id="password"><br><br>
-        </p> 
-    </form>
+    <div class="grid-container">
+        <div class="grid-item">Email:</div>
+        <div class="grid-item">
+            <input type="email" id="email">
+        </div>
+        <div class="grid-item">Password:</div>  
+        <div class="grid-item">
+            <input type="password" id="password">
+        </div>
+
+    </div>
     <button id="validateInput" type="button">Check email & password!</button><br><br>
     <p id="checkResult"></p>
+
 </body>
 </html>

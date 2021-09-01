@@ -1,24 +1,25 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:rgb(82, 163, 57);
+    padding: 10px;
+    width: 30%;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: right;
+  }
+
 body {
     background-color: beige;
     color: rgb(82, 163, 57);
     font-family: 'Courier New', Courier, monospace;
 }
 
-form {
-    display: table;
-}
-
-p {
-    display: table-row;
-}
-
-label {
-    display: table-cell;
-}
-
-input {
-    display: table-cell;
-}
 
 #validateInput {
     background-color: #4CAF50; /* Green */
@@ -31,6 +32,7 @@ input {
     display: inline-block;
     font-size: 16px;
     box-shadow: 0 3px #999;
+    margin-top: 8px;
   }
   #validateInput:hover {background-color: #3e8e41}
 
@@ -42,6 +44,7 @@ input {
 
   #checkResult {
       font-style:italic;
-      color: red;
+      color: black;
+      font-weight: bold;
   }
 
